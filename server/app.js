@@ -1,5 +1,4 @@
 //Importacion de las llaves necesarias para el proceso
-const { } = require('c')
 
 //Importacion de los modulos
 const express = require('express');
