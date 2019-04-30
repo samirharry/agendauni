@@ -1,5 +1,3 @@
-//Importacion de las llaves necesarias para el proceso
-const {PORT} = require('./server/config/keys');
 //Importacion de los modulos
 const express = require('express');
 const mongoose = require('mongoose');
@@ -17,6 +15,8 @@ app.use(bodyParser.json())
 
 app.use('/',web);
 
-app.listen(PORT,()=>{
-	console.log(`Escuchando en el puerto ${PORT}`);
+const port = process.env.PORT || 3000;
+
+app.listen(port,()=>{
+	console.log(`Escuchando en el puerto ${port}`);
 });
