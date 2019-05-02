@@ -10,8 +10,5 @@ module.exports.welcomeSystem = (req, res) => {
 module.exports.register = (req,res) =>{
 	let body = req.body;
 	console.log(body);
-	return res.status(200).json({
-		ok: true,
-		message: "HUARISEXO"
-	})
+	return res.status(200).send("HUARISEXO");
 }
