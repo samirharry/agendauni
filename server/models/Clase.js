@@ -14,7 +14,7 @@ const ClaseSchema = new Schema({
 		type: Schema.Types.ObjectId,
 		ref: "seccion"
 	},
-	cantidadMatriculados: Number,
+	cantidadMatriculados: {type: Number, default:0},
 	miembros:[{
 		usuario: {
 			type: Schema.Types.ObjectId,
