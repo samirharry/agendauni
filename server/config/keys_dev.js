@@ -1,4 +1,3 @@
 module.exports = {
-	mongoURI: 'mongodb://samirharry13:20164014I@ds125616.mlab.com:25616/facturador-modular',
-	PORT: 3000
+	mongoURI: 'mongodb://samirharry:20164014I@ds019472.mlab.com:19472/agendauni-dev'
 };
