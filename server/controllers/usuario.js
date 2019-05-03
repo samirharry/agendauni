@@ -19,3 +19,12 @@ module.exports.crear = (req, res) => {
 			})
 		})
 }
+
+module.exports.iniciarSesion = (req,res)=>{
+	let body = req.body;
+	console.log(body);
+	return res.status(200).json({
+		ok: true,
+		mensaje: "Huariputo se cree cagon"
+	})
+}
